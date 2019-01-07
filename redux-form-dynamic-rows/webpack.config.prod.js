@@ -7,8 +7,7 @@ module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     path: path.resolve(__dirname, 'lib'),
-    filename: 'index.js',
-    libraryTarget: 'commonjs2'
+    filename: 'index.js'
   },
   module: {
     rules: [
@@ -20,6 +19,6 @@ module.exports = {
     ]
   },
   externals: {
-    'react': 'commonjs react'
+    'react': 'react'
   }
 }
